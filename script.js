@@ -28,12 +28,12 @@ const number = '21';
 /* Fase di Raccolta dei dati */
 
 // Chiedo all'utente il suo nome
-const name = prompt("Qual'e il tuo nome?", 'Marco');
-console.log(name);
+const firstName = prompt("Qual'e il tuo nome?", 'Marco');
+console.log(firstName);
 
 // Chiedo all'utente il suo cognome
-const lastname = prompt("Qual'è il tuo cognome?", 'Cappellato');
-console.log(lastname);
+const lastName = prompt("Qual'è il tuo cognome?", 'Cappellato');
+console.log(lastName);
 
 // Chiedo all'utente il suo colore preferito
 const favColour = prompt("Qual'è il tuo colore preferito?", 'Arancione')
@@ -42,11 +42,12 @@ console.log(favColour);
 /* Fase di lavorazione dei dati */
 
 // Elaboro la stringa
-const password = name + lastname + favColour + number;
+const password = firstName + lastName + favColour + number;
 console.log(password);
 
 /* Fase di output */
-/* Stampo il messaggio */
+
+// Stampo il messaggio 
 resultElement.innerText = `La tua password generata è ${password}`;
 
 
